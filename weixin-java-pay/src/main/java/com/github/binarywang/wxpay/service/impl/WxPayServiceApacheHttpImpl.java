@@ -197,7 +197,7 @@ public class WxPayServiceApacheHttpImpl extends BaseWxPayServiceImpl {
     }
 
     SSLConnectionSocketFactory connectionSocketFactory = new SSLConnectionSocketFactory(sslContext,
-      new String[]{"TLSv1"}, null, new DefaultHostnameVerifier());
+     new DefaultHostnameVerifier());
     httpClientBuilder.setSSLSocketFactory(connectionSocketFactory);
   }
 
